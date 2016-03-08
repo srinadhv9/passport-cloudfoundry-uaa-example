@@ -36,8 +36,9 @@ strategy.userProfile = function (accessToken, done) {
     if (err) {
       return done(err);
     }
-
     try {
+		console.log(accessToken);
+		console.log(body);
       done(null, JSON.parse(body));
     } catch (e) {
       done(e);

@@ -1,0 +1,9 @@
+---
+applications:
+- name: CC-UI
+  memory: 512M
+  instances: 1
+  path: .
+  command: node index.js
+  services:
+    -  CC_UAA
